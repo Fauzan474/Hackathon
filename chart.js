@@ -2,14 +2,14 @@
 // CHART 1
 const data1 = {
     labels: [
-        'Depresi',
-        'Gangguan Kecemasan',
-        'Stress Pasca-Trauma',
-        'Masalah Perilaku',
-        'Hiperaktivitas'
+        'Depression',
+        'Anxiety',
+        'Post Traumatic Stress Disorder',
+        'Behavior Problems',
+        'Hyperactive'
     ],
     datasets: [{
-        label: ' Persentase',
+        label: ' Percentage',
         data: [10.7, 53.6, 3.7, 4.7, 21.1],
         hoverOffset: 4
     }]
@@ -40,7 +40,7 @@ const data2 = {
     ],
     datasets: [{
         axis: 'y',
-        label: ' Persentase Seluruh Responden',
+        label: ' Percentage of All Respondents',
         data: [79, 55, 28, 19, 14, 14, 14, 12, 10, 10],
         borderWidth: 1
     }]

@@ -12,11 +12,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style>
-    .wrapper-number {
-      font-size: 128px;
-    }
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+  <style>
     .wrapper-hero {
       background: url("img/hero.jpg");
       background-size: cover;
@@ -27,9 +25,9 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-    <div class="container-fluid col-10">
-      <a class="navbar-brand fw-bold" href="index.html">Mentalize</a>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top fs-6 fw-bold">
+    <div class="container-fluid col-11">
+      <a class="navbar-brand fw-bold" href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,23 +38,20 @@
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="therapist.html">Seek Therapist</a>
+            <a class="nav-link " href="therapist.html">Seek Therapist</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="informationhub.html">Information Hub</a>
+            <a class="nav-link " href="informationhub.html">Information Hub</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="statistics.html">Infographics & Statistics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="aboutus.html">About Us</a>
+            <a class="nav-link " href="aboutus.html">About Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
-  <div class="bg-black-50 text-bg-dark wrapper-hero">
+
+  <div class="text-bg-dark wrapper-hero">
     <div class="container px-4 py-5">
       <div class="row align-items-start g-lg-5 py-5">
         <div class="col-lg-6 text-center text-lg-start align-top">
@@ -70,25 +65,214 @@
             Start your journey with Mentalize today and embrace a healthier, happier tomorrow.
           </p>
           <div class="mb-5 wow animate__animated animate__fadeInUp">
-            <button type="button" class="mt-2 mx-1 btn btn-lg active btn-outline-primary">Get Started</button>
-            <button type="button" class="mt-2 mx-1 btn btn-lg btn-outline-secondary">Learn More</button>
+            <button type="button" class="mt-2 mx-1 btn btn-lg active btn-outline-info"
+              onclick="document.getElementById('mentalize').scrollIntoView();">Get Started</button>
+            <a type="button" class="mt-2 mx-1 btn btn-lg btn-outline-secondary" href="aboutus.html">About Us</a>
           </div>
         </div>
+      </div>
+      <span id="mentalize"><br><br></span>
+    </div>
+  </div>
+
+  <br>
+  <div class="container animate__animated animate__fadeInUp animate__slow wow">
+    <h5 class="display-4 fw-bold text-dark p-4 text-center">
+      Mentalize.
+    </h5>
+    <div class="row justify-content-center">
+      <p class="fs-4 col-lg-8 d-flex align-self-center text-center">
+        Mentalize is a transformative web project dedicated to providing a comprehensive platform for mental health
+        support, information, and resources. We understand the importance of mental well-being in our lives and aim to
+        empower individuals to take charge of their mental health journey.
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 align-self-center p-5 wow animate__animated animate__fadeInUp animate__slow">
+        <p class="lead fs-3">"Is a state of mental well-being that enables people to cope with the stresses of life,
+          realize
+          their abilities, learn well and work well, and contribute to their community."</p>
+        <p class="fst-italic fw-bold fs-3 lead">- World Health Organization (WHO). </p>
+      </div>
+      <div class="col-lg rounded-0 wow animate__animated animate__fadeInUp animate__slower">
+        <img
+          src="https://www.cognitivebehaviorassociates.com/wp-content/uploads/2020/07/reasons-people-avoid-mental-health-treatment.jpg"
+          class="img-fluid" alt="">
       </div>
     </div>
   </div>
 
-  <div class="text-center p-5 m-5 animate__animated animate__fadeIn wow animate__slow">
+  <div class="container">
+    <div class="row">
+      <div class="text-center p-5  animate__animated animate__fadeInUp wow animate__slow col-lg-7">
+        <img src="img/ncd.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="text-start p-5 animate__animated animate__fadeInUp wow animate__slow col-lg-5">
+        <h1 class="display-5 fs-2 mb-5">
+          Some examples of <span class="fw-bold">Non-Communicable Diseases</span> in Mental Health :
+        </h1>
+
+        <ul class="list-group list-group-flush fs-5 lead">
+          <li class="list-group-item">Anixety</li>
+          <li class="list-group-item">OCD (Obsessive-Compulsive Disorder)</li>
+          <li class="list-group-item">Depression</li>
+          <li class="list-group-item">Schizophrenia</li>
+          <li class="list-group-item">Bipolar Disorder</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <h5
+      class="display-5 fw-bold text-dark p-4 text-center fs-1 mb-2 mt-5 animate__animated animate__fadeInUp animate__slow wow">
+      Sustainable Development Goal (SDG) Target 3.4
+    </h5>
+    <div class="row justify-content-center">
+      <p class="fs-5 col-lg-10 text-center mb-5 animate__animated animate__fadeInUp animate__slow wow">
+        <span class="fw-bold">Sustainable Development Goal (SDG) Target 3.4</span> aims to reduce premature mortality
+        from non-communicable diseases through prevention and treatment and promote mental health and well-being.
+      </p>
+    </div>
+    <div class="row justify-content-center fs-5 lead mt-5">
+      <div class="col-lg-8 mb-5">
+        <div class="accordion accordion-flush animate__animated animate__fadeInUp animate__slow wow"
+          id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What is SDG 3.4?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> SDG 3.4 refers to the <span class="fw-bold">Sustainable Development Goal
+                  3.4</span>, which is part of the
+                United Nations' 2030 Agenda for Sustainable Development. SDG 3.4 specifically focuses on promoting
+                mental health and well-being. It aims to ensure that everyone has access to mental health services,
+                treatment, and support.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Why is mental health important in the context of SDG 3.4?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Mental health is a crucial aspect of overall well-being and plays a
+                significant role in a person's ability to lead a fulfilling and productive life. By addressing mental
+                health as part of SDG 3.4, the <span class="fw-bold">United Nations recognizes the impact of mental
+                  health on individuals,
+                  communities, and societies.</span> It acknowledges that promoting mental well-being and providing
+                accessible
+                mental health services are essential for achieving sustainable development.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What are the key objectives of SDG 3.4?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p class="fs-5"> <span class="fw-bold">The primary objectives of SDG 3.4 are to:</span></p>
+                <p class="fs-5"> - Promote mental health and well-being for all individuals, irrespective of age,
+                  gender, or socioeconomic status.</p>
+                <p class="fs-5"> - Ensure access to quality mental health services, including prevention, promotion,
+                  treatment, and rehabilitation.</p>
+                <p class="fs-5"> - Reduce the global burden of mental health disorders, including the prevention of
+                  suicide and substance abuse.</p>
+                <p class="fs-5"> - Strengthen the capacity of mental health care providers and resources in communities
+                  worldwide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="fs-5 col-lg-8 text-center mt-5 animate__animated animate__fadeInUp animate__slow wow">
+        SDG 3.4 is part of a broader global effort to create a more sustainable and inclusive future. By addressing
+        mental health, we can build resilient communities and ensure that no one is left behind in the pursuit of
+        sustainable development.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="text-center p-5 animate__animated animate__fadeInUp animate__slow wow bg-light">
     <h4 class="fs-5">Quoted from the Report of <strong>Indonesia National Adolescent Mental Health Survey</strong></h4>
     <h1 class="display-1 fw-bold ">
-      <div class="wrapper-number wow animate__animated animate__pulse animate__delay-1s ">15,5 Million </div>
+      <div class="wow animate__animated animate__pulse animate__delay-1s " style="font-size: 1em;">15,5 Million </div>
       <h2 class="display-5">Indonesia Teenagers Have Mental Disorders.</h2>
     </h1>
   </div>
 
+
+  <section class="py-3 " id="">
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="container">
+          <h1 class='animate__animated animate__fadeInDown wow text-center display-5 fw-bold'>
+            Indonesia National Mental Health Statistics
+          </h1>
+        </div>
+        <br>
+        <div class="container text-center m-2 mx-auto">
+          <span class="badge text-bg-warning d-lg-none d-md-none d-sm-none text-center p-3">Use Desktop Site to view
+            Statistics.</span>
+        </div>
+        <div class="col-lg-4 p-3 align-items-stretch d-flex">
+          <div class="card animate__animated animate__fadeIn wow animate__slow">
+            <div class="wrapper m-3">
+              <p class="fst-italic">Indonesia National Adolescent Mental Health Survey <a
+                  href="https://qcmhr.org/wp-content/uploads/2023/02/I-NAMHS-Report-Bahasa-Indonesia.pdf">By I-NAMHS</a>
+              </p>
+              <h5 class="">Prevalence of Mental Health Problems Among Adolescents Aged 10-17 Years.
+              </h5>
+              <div>
+
+                <canvas id="1"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg p-3 align-items-stretch d-flexs">
+          <div class="card animate__animated animate__fadeIn wow animate__slow">
+            <div class="wrapper m-3">
+              <p class="fst-italic">Indonesia's Mental Health State & Access to Medical Assistance -<a
+                  href="https://goodstats.id/article/10-aplikasi-layanan-kesehatan-mental-paling-sering-digunakan-masyarakat-indonesia-2022-6Fir1">
+                  By Populix</a></p>
+              <h5 class="">
+                Mental Health Services Most Frequently Used by Indonesians in 2022
+              </h5>
+              <div class="chart-container">
+                <canvas id="2"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+  </section>
+
   <footer class="footer text-muted py-5 bg-dark">
     <div class="container">
-      <p class="mb-1 text-center text-white-50">&copy;2023 Team Fanda </p>
+      <p class="mb-1 text-center text-white-50">&copy; 2023 Team Fanda, YOUTH IN HACK.</p>
     </div>
   </footer>
 
@@ -101,6 +285,7 @@
   <script>
     new WOW().init();
   </script>
+  <script src="chart.js"></script>
 </body>
 
 </html>
